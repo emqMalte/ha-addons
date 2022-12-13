@@ -1,0 +1,20 @@
+name: "influxDB 2"
+description: "Very basic influxDB 2 addon - you should probably not use this."
+version: "1.0.7"
+slug: "influxdb2"
+init: false
+arch:
+  - aarch64
+  - amd64
+# webui: http://[HOST]:8086/
+# ingress: true
+# ingress_port: 8086
+ports:
+  8086/tcp: 8086
+ports_description:
+  8086/tcp: HTTP Port for Dashboard access
+environment:
+  INFLUXD_CONFIG_PATH: /data/config
+  INFLUXD_ENGINE_PATH: /data/engine
+  INFLUXD_BOLT_PATH: /data/influxd.bolt
+  INFLUXD_SQLITE_PATH: /data/influxd.sqlite
