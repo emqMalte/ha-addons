@@ -1,7 +1,11 @@
 name: "influxDB 2"
 description: "Very basic influxDB 2 addon - you should probably not use this."
-version: "1.0.7"
+url: https://github.com/emqMalte/ha-addons/blob/main/README.md
+version: "1.0.8"
+stage: experimental
+advanced: true
 slug: "influxdb2"
+startup: services
 init: false
 arch:
   - aarch64
