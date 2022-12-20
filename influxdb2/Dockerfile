@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 # FROM $BUILD_FROM
 
-FROM influxdb:2.5
+FROM influxdb:2.6
 
 ## Copy data for add-on
 # COPY run.sh /
